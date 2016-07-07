@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2.2)
 
-find_package(Ruby 1.9)
+find_package(Ruby 2.3)
 
 # Set the common (platform-independent) sources
 set(LIBFACTER_TESTS_COMMON_SOURCES

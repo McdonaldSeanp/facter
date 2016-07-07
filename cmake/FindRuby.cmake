@@ -181,6 +181,11 @@ if(RUBY_EXECUTABLE AND NOT RUBY_VERSION_MAJOR)
       set(RUBY_VERSION_MAJOR 2)
       set(RUBY_VERSION_MINOR 1)
    endif()
+      # check whether we found 2.3.x
+   if(${RUBY_EXECUTABLE} MATCHES "ruby2.?3")
+      set(RUBY_VERSION_MAJOR 2)
+      set(RUBY_VERSION_MINOR 3)
+   endif()
 endif()
 
 if(RUBY_VERSION_MAJOR)

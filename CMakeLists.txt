@@ -142,13 +142,13 @@ add_subdirectory(lib)
 add_subdirectory(exe)
 
 # Add test executables for unit testing
-add_test(NAME "libfacter\\ tests" COMMAND libfacter_test)
-if (RUBY_FOUND)
-    find_program(BUNDLER_PATH NAMES bundle.bat bundle)
-    if (BUNDLER_PATH)
-        add_test(NAME "libfacter\\ specs" COMMAND ${BUNDLER_PATH} exec rspec WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/lib")
-    endif()
-endif()
+# add_test(NAME "libfacter\\ tests" COMMAND libfacter_test)
+# if (RUBY_FOUND)
+#     find_program(BUNDLER_PATH NAMES bundle.bat bundle)
+#     if (BUNDLER_PATH)
+#         add_test(NAME "libfacter\\ specs" COMMAND ${BUNDLER_PATH} exec rspec WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/lib")
+#     endif()
+# endif()
 add_test(NAME "facter\\ smoke" COMMAND facter)
 
 # Install the man page
