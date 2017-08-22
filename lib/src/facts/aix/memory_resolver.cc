@@ -1,6 +1,7 @@
 #include <internal/facts/aix/memory_resolver.hpp>
 #include <internal/util/aix/odm.hpp>
 
+#include <sys/types.h>
 #include <sys/vminfo.h>
 #include <sys/cfgodm.h>
 #include <sys/limits.h>
